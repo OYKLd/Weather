@@ -1,15 +1,5 @@
-let API_KEY;
-
-async function loadApiKey() {
-    try {
-        const envResponse = await fetch('.env');
-        const envText = await envResponse.text();
-        const envLine = envText.split('\n').find(line => line.startsWith('API_KEY='));
-        API_KEY = envLine ? envLine.split('=')[1] : 'YOUR_API_KEY_HERE';
-    } catch (error) {
-        API_KEY = 'YOUR_API_KEY_HERE';
-    }
-}
+// Configuration de la clé API - remplacez par votre vraie clé
+const API_KEY = 'f4b470cef05db28e57ea467925d762e3';
 
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
@@ -120,12 +110,6 @@ elements.cityInput.addEventListener('input', () => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', async () => {
-    await loadApiKey();
+document.addEventListener('DOMContentLoaded', () => {
     elements.cityInput.focus();
-    
-    if (API_KEY === 'YOUR_API_KEY_HERE') {
-        showError('Veuillez configurer votre clé API OpenWeatherMap dans le fichier .env');
-        return;
-    }
 });
