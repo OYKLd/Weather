@@ -1,81 +1,75 @@
-# Weather Application
+# Weather
 
-Une application météo simple et moderne utilisant HTML, CSS, JavaScript et l'API OpenWeatherMap.
+## Description
+Application web permettant d’afficher la météo actuelle d’une ville saisie par l’utilisateur, en récupérant les données depuis une API externe.  
+Ce projet est le **dix-huitième** du défi personnel **100 projets en 2026**.
 
-## 🎯 Objectifs pédagogiques
+---
 
-- Faire une requête fetch avec JavaScript
-- Manipuler une réponse JSON
-- Gérer les erreurs réseau
-- Afficher dynamiquement des données
-- Structurer une UI basée sur des données externes
+## Objectifs du projet
+- Consommer une API externe avec `fetch`
+- Manipuler des données JSON
+- Gérer les états (chargement, erreur)
+- Mettre à jour l’interface dynamiquement
+- Concevoir une application simple basée sur des données réelles
 
-## 🛠️ Technologies utilisées
+---
 
-- **HTML5** : Structure sémantique
-- **CSS3** : Design moderne avec animations et responsive design
-- **JavaScript (Vanilla)** : Logique de l'application et gestion d'API
-- **OpenWeatherMap API** : Données météo en temps réel
+## Plateforme
+- Web (navigateur)
 
-## ✅ Fonctionnalités
+---
 
-- Saisie d'une ville avec recherche
-- Affichage des informations météo :
-  - Température en Celsius
-  - Description météo en français
-  - Humidité (%)
-  - Vitesse du vent (km/h)
-  - Icône météo dynamique
-- Gestion des erreurs (ville non trouvée, problème réseau)
-- Indicateur de chargement animé
-- Design responsive pour mobile et desktop
+## Technologies utilisées
+- HTML
+- CSS
+- JavaScript (Vanilla)
+- API météo
 
-## 🚀 Installation
+---
 
-1. Clonez ou téléchargez les fichiers du projet
-2. Obtenez une clé API gratuite sur [OpenWeatherMap](https://openweathermap.org/api)
-3. Ouvrez `script.js` et remplacez `YOUR_API_KEY_HERE` par votre clé API
-4. Ouvrez `index.html` dans votre navigateur
+## Fonctionnalités
+- Saisie du nom d’une ville
+- Affichage de la température actuelle
+- Affichage de la description météo
+- Affichage de l’humidité
+- Affichage de la vitesse du vent
+- Icône météo dynamique
+- Gestion des erreurs (ville non trouvée)
+- Indicateur de chargement
 
-## 📱 Utilisation
+---
 
-1. Entrez le nom d'une ville dans le champ de recherche
-2. Cliquez sur "Rechercher" ou appuyez sur Entrée
-3. Les données météo s'affichent avec un indicateur de chargement
-4. En cas d'erreur, un message clair s'affiche
+## Design & UX
+- Interface claire et aérée
+- Carte centrale avec température en grand
+- Icône météo visible
+- Champ de recherche simple et accessible
+- Responsive (mobile et desktop)
 
-## 🎨 Design
+---
 
-- Interface moderne et épurée
-- Palette de couleurs inspirée du ciel (bleu/violet dégradé)
-- Animations fluides et transitions
-- Design responsive adapté à tous les écrans
-- Icônes météo officielles d'OpenWeatherMap
+## Captures d’écran
+![alt text](image.png)
+---
 
-## 🔧 Structure des fichiers
+## Ce que j’ai appris
+- Utilisation de `fetch` pour consommer une API
+- Manipulation des réponses JSON
+- Gestion des erreurs réseau
+- Mise à jour dynamique du DOM
+- Amélioration de l’expérience utilisateur avec un état de chargement
 
-```
-Weather/
-├── index.html      # Structure HTML de l'application
-├── style.css       # Styles et animations CSS
-├── script.js       # Logique JavaScript et gestion API
-└── README.md       # Documentation du projet
-```
+---
 
-## 🌐 API OpenWeatherMap
+## Améliorations possibles
+- Prévisions sur plusieurs jours
+- Géolocalisation automatique
+- Historique des recherches
+- Mode sombre
+- Sélection d’unités (°C / °F)
 
-L'application utilise l'API Current Weather Data d'OpenWeatherMap :
-- Endpoint : `https://api.openweathermap.org/data/2.5/weather`
-- Paramètres : ville, units=metric, lang=fr
-- Format de réponse : JSON
+---
 
-## 📚 Concepts appris
-
-- **Fetch API** : Requêtes HTTP asynchrones
-- **Async/Await** : Gestion des opérations asynchrones
-- **Manipulation JSON** : Parsing et utilisation des données
-- **Gestion d'erreurs** : try/catch et codes d'erreur HTTP
-- **DOM manipulation** : Mise à jour dynamique de l'interface
-- **Event handling** : Écouteurs d'événements utilisateur
-- **Responsive design** : CSS Grid et Flexbox
-- **Animations CSS** : Transitions et keyframes
+## Statut du projet
+ **Projet terminé**
